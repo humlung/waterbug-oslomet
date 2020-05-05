@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 
 // Import components
 import Home from '../components/home'
-import About from '../components/about'
+import About from '../components/content/about'
 
 Vue.use(VueRouter);
 

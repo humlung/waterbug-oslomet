@@ -1,0 +1,82 @@
+{
+  "plants" : [
+    {
+      "id": 1,
+      "sensorId" : 123,
+      "activated" : "2020-04-03T12:10:02:132",
+      "name" : "Oda",
+      "type" : "Aloe Vera",
+      "imgPrefix" : "oda",
+      "lifetime" : 324,
+      "sunNeed" : 3,
+      "currentMoistureLevel" : 65,
+      "optimalMoistureLevel" : 85,
+      "timeToWater" : 4
+    },
+    {
+      "id": 2,
+      "sensorId" : 1453,
+      "activated" : "2020-03-21T12:10:02:132",
+      "name" : "Changiz",
+      "type" : "Cactus",
+      "imgPrefix" : "changiz",
+      "lifetime" : 34,
+      "sunNeed" : 2,
+      "currentMoistureLevel" : 12,
+      "optimalMoistureLevel" : 10,
+      "timeToWater" : 2
+    },
+    {
+      "id": 3,
+      "sensorId" : 53,
+      "activated" : "2020-01-01T12:10:02:132",
+      "name" : "Erika",
+      "type" : "Bamboo Plant",
+      "imgPrefix" : "erika",
+      "lifetime" : 13,
+      "sunNeed" : 2,
+      "currentMoistureLevel" : 50,
+      "optimalMoistureLevel" : 73,
+      "timeToWater" : 12
+    },
+    {
+      "id": 4,
+      "sensorId" : 5323,
+      "activated" : "2020-01-03T13:11:02:132",
+      "name" : "Julie",
+      "type" : "Monstera",
+      "imgPrefix" : "julie",
+      "lifetime" : 201,
+      "sunNeed" : 2,
+      "currentMoistureLevel" : 43,
+      "optimalMoistureLevel" : 76,
+      "timeToWater" : 2
+    },
+    {
+      "id": 4,
+      "sensorId" : 5323,
+      "activated" : "2020-01-03T13:11:02:132",
+      "name" : "Zita",
+      "type" : "Hollyhock",
+      "imgPrefix" : "zita",
+      "lifetime" : 16,
+      "sunNeed" : 3,
+      "currentMoistureLevel" : 75,
+      "optimalMoistureLevel" : 68,
+      "timeToWater" : 6
+    },
+    {
+      "id": 5,
+      "sensorId" : 23,
+      "activated" : "2020-04-12T15:01:02:132",
+      "name" : "Nikita",
+      "type" : "Heather",
+      "imgPrefix" : "nikita",
+      "lifetime" : 45,
+      "sunNeed" : 1,
+      "currentMoistureLevel" : 45,
+      "optimalMoistureLevel" : 31,
+      "timeToWater" : 1
+    }
+  ]
+}

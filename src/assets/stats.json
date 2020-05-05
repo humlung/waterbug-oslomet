@@ -1,0 +1,75 @@
+{
+  "stats" : [
+    {
+      "name" : "seasonStats",
+      "id" : 1,
+      "content" : [
+        {
+          "season" : "Summer",
+          "new" : 2,
+          "dead" : 4,
+          "avgMoisture" : 59
+        },
+        {
+          "season" : "Spring",
+          "new" : 5,
+          "dead" : 1,
+          "avgMoisture" : 43
+        },
+        {
+          "season" : "Fall",
+          "new" : 4,
+          "dead" : 5,
+          "avgMoisture" : 83
+        },
+        {
+          "season": "Winter",
+          "new": 1,
+          "dead": 2,
+          "avgMoisture": 45
+        }
+      ]
+    },
+    {
+      "name" : "wateringPrecision",
+      "id" : 2,
+      "content" : {
+        "status" : "Good",
+        "daysOverdue" : 2
+      }
+    },
+    {
+      "name" : "livingVsDead",
+      "id" : 3,
+      "content" : {
+        "living" : 9,
+        "dead" : 12
+      }
+    },
+    {
+      "name" : "topThreePlants",
+      "id" : 4,
+      "content" : [
+        {
+          "type" : "Aloe Vera",
+          "count" : 4
+        },
+        {
+          "type" : "Cactus",
+          "count" : 3
+        },
+        {
+          "type" : "Bamboo Plant",
+          "count" : 3
+        }
+      ]
+    },
+    {
+      "name" : "longestLiving",
+      "id" : 5,
+      "content" : {
+        "plantId" : 4
+      }
+    }
+  ]
+}
