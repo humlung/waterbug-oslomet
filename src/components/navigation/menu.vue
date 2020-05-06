@@ -2,14 +2,18 @@
     <div class="menu-wrapper">
         <nav class="container-fluid">
             <ul class="row">
-                <li class="col-sm-12 col-md-6">
-                    <button>add plant</button>
+                <li class="">
+                    <router-link to="/home"><button>home</button></router-link>
                 </li>
-                <li class="col-sm-12 col-md-6">
+                <li class="">
+                    <router-link to="/add"><button>add plant</button></router-link>
+                </li>
+                <li class="">
                     <router-link to="/about"><button>about</button></router-link>
                 </li>
             </ul>
         </nav>
+
     </div>
 </template>
 
@@ -23,11 +27,21 @@
     ul {
         list-style-type: none;
         padding: 0;
+        display: flex;
+        width: 70%;
+        margin: auto;
     }
 
     ul li {
         text-decoration: none;
         margin: 0.5em;
+        flex-grow: 1;
+    }
+
+    .router-link-active > button {
+        background-color: #ffffff;
+        color: #000000;
+        outline: #ffffff;
     }
 
     button {
@@ -46,5 +60,6 @@
         background: #ffffff;
         color: #000000;
         cursor: pointer;
+        outline: #ffffff;
     }
 </style>
