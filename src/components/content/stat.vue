@@ -115,7 +115,6 @@
         border-radius: 10px;
         display: flex;
         flex-direction: column;
-        margin: 1em;
         transition: 200ms ease;
         padding-bottom: 1em;
     }

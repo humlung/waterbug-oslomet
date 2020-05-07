@@ -25,6 +25,11 @@
 #app {
   text-align: center;
   background: rgba(32, 206, 154, 0.35);
-  height: 100vh;
+  padding: 4%;
 }
+  body {
+    background: url('./assets/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
 </style>

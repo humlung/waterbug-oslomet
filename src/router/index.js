@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 // Import components
 import Home from '../components/home'
 import About from '../components/content/about'
+import Add from '../components/content/add'
 
 Vue.use(VueRouter);
 
@@ -23,6 +24,11 @@ const router = new VueRouter({
             path: '/about',
             name: 'About',
             component: About,
+        },
+        {
+            path: '/add',
+            name: 'Add',
+            component: Add,
         },
     ]
 });

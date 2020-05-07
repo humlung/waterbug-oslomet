@@ -2,11 +2,15 @@
     <div class="main-wrapper container-fluid">
 
         <div class="main-wrapper-container row">
-            <div class="main-wrapper-segment col-12 col-md-6 row no-gutters">
+
+            <!--PLANTS-->
+            <div class="main-wrapper-segment col-12 col-lg-6 ">
                 <div class="main-wrapper-header col-12">
                     <h4>my plants</h4>
                 </div>
-                <div class="plant-card-wrapper col-6" v-for="plant in plants" :key="plant.id">
+                <div class="card-columns">
+                <div
+                        class="plant-card-wrapper card" v-for="plant in plants" :key="plant.id">
                     <div class="plant-card">
                         <div class="plant-card-top">
                             <div class="plant-name-type">
@@ -29,14 +33,19 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
-            <div class="main-wrapper-segment col-12 col-md-6 row no-gutters">
+
+            <!--STATS-->
+            <div class="main-wrapper-segment col-12 col-lg-6">
                 <div class="main-wrapper-header col-12">
                     <h4>my stats</h4>
                 </div>
-                <div class="col-12 col-md-6"
+                <div class="card-columns">
+                <div class="plant-card-wrapper card"
                         v-for="stat in this.stats" :key="stat.id">
                     <plant-stat v-bind:stat="stat"></plant-stat>
+                </div>
                 </div>
             </div>
         </div>
@@ -243,17 +252,29 @@
     .main-wrapper-segment {
         padding: 0;
     }
+
+    .card-columns {
+        margin-right: 1em;
+        margin-left: 1em;
+        margin-bottom: 5em;
+        margin-top: 1.6em;
+    }
+    .card {
+        margin: 0;
+        display: inline-flex;
+        width: 100%;
+        margin-top: 1em;
+    }
     /*START PLANT CARD*/
     .plant-card-wrapper {
         padding: 0;
+        background-color: transparent;
+        border: none;
     }
     .plant-card {
         background: rgba(255, 255, 255, 0.8);
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        margin: 1em;
         cursor: pointer;
         transition: 200ms ease;
     }
@@ -265,7 +286,8 @@
     .plant-card-top {
         display: flex;
         flex-direction: row;
-        margin: 1em
+        margin: 1em;
+        margin-top: 2em;
     }
     .plant-card-top *{
         flex-grow: 1;
@@ -280,7 +302,7 @@
         font-style: normal;
         font-weight: bold;
         text-align: left;
-        font-size: 1.5em;
+        font-size: 100%;
         margin: 0;
         margin-top: -0.5em;
     }
@@ -319,7 +341,7 @@
     .plant-card-icon {
         z-index: 2;
         position: absolute;
-        font-size: 3em;
+        font-size: 3.3em;
         right: 0;
         opacity: 0.6;
     }
@@ -336,5 +358,12 @@
     }
     .plant-card:hover .div-fade {
         opacity: 0;
+    }
+    @media (min-width: 34em) {
+        .card-columns {
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            column-count: 2;
+        }
     }
 </style>
